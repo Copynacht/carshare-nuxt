@@ -74,11 +74,11 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:8000',
+    baseURL: 'https://carshare.copynight.net',
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:8000',
+    baseUrl: process.env.BASE_URL || 'https://carshare.copynight.net',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
