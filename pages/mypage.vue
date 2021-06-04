@@ -56,7 +56,6 @@ export default {
       username: [
         (value) => !!value || 'ユーザー名を入力してください',
         (value) => !!value || 'メールアドレスを入力してください',
-        (value) => (value || '').length <= 10 || '10文字以下',
       ],
     },
   }),
