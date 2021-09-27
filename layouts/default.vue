@@ -60,6 +60,11 @@ export default {
           to: '/mypage',
         },
         {
+          icon: 'mdi-head',
+          title: '管理者画面',
+          to: '/admin/manage',
+        },
+        {
           icon: 'mdi-exit-run',
           title: 'ログアウト',
           to: '/signout',

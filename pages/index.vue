@@ -75,7 +75,7 @@
                   fab
                   small
                   dark
-                  @click="openReturnDialog(mr.id)"
+                  @click="openReturnDialog(mr.id, mr.car.odometer)"
                 >
                   <v-icon>mdi-keyboard-return</v-icon>
                 </v-btn>
@@ -237,7 +237,9 @@ export default {
     jumpReservation(id) {
       this.$router.push('/reservation/' + id)
     },
-    openReturnDialog(id) {
+    openReturnDialog(id, odometer) {
+      this.startOdometer = odometer
+      this.endOdometer = odometer
       this.returnID = id
       this.returnDialog = true
     },

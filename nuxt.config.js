@@ -78,7 +78,7 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'https://carshare.copynight.net',
+    baseUrl: process.env.BASE_URL || 'https://carshare.copynight.net', // 'https://carshare.copynight.net',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
