@@ -32,7 +32,7 @@ export default {
         .get(process.env.baseUrl + '/api/user/', {
           headers: {
             Authorization:
-              'JWT ' + this.$auth.getToken('local').replace('Bearer', ''),
+              'Bearer ' + this.$auth.getToken('local').replace('Bearer', ''),
           },
         })
         .then((res) => {
