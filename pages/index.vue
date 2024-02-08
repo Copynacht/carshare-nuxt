@@ -171,7 +171,7 @@ export default {
           {
             headers: {
               Authorization:
-                'JWT ' + this.$auth.getToken('local').replace('Bearer', ''),
+                'Bearer ' + this.$auth.getToken('local').replace('Bearer', ''),
             },
           }
         )
@@ -216,7 +216,7 @@ export default {
           {
             headers: {
               Authorization:
-                'JWT ' + this.$auth.getToken('local').replace('Bearer', ''),
+                'Bearer ' + this.$auth.getToken('local').replace('Bearer', ''),
             },
           }
         )
@@ -251,7 +251,7 @@ export default {
         .get(process.env.baseUrl + '/api/reservation/?my=true', {
           headers: {
             Authorization:
-              'JWT ' + this.$auth.getToken('local').replace('Bearer', ''),
+              'Bearer ' + this.$auth.getToken('local').replace('Bearer', ''),
           },
         })
         .then((res) => {

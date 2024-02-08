@@ -48,7 +48,7 @@ export default {
         .get(process.env.baseUrl + '/api/car/', {
           headers: {
             Authorization:
-              'JWT ' + this.$auth.getToken('local').replace('Bearer', ''),
+              'Bearer ' + this.$auth.getToken('local').replace('Bearer', ''),
           },
         })
         .then((res) => {
@@ -64,7 +64,7 @@ export default {
                 {
                   headers: {
                     Authorization:
-                      'JWT ' +
+                      'Bearer ' +
                       this.$auth.getToken('local').replace('Bearer', ''),
                   },
                 }
@@ -101,7 +101,7 @@ export default {
           {
             headers: {
               Authorization:
-                'JWT ' + this.$auth.getToken('local').replace('Bearer', ''),
+                'Bearer ' + this.$auth.getToken('local').replace('Bearer', ''),
             },
           }
         )
