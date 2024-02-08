@@ -53,7 +53,7 @@ export default {
   auth: {
     redirect: {
       login: '/signin',
-      logout: '/signin',
+      logout: '/signout',
       callback: false,
       home: '/',
     },
@@ -63,7 +63,7 @@ export default {
           login: {
             url: '/login/',
             method: 'post',
-            propertyName: 'token',
+            propertyName: 'access',
           },
           user: false,
           logout: false,
